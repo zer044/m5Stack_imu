@@ -1,5 +1,6 @@
 
 #include <M5Stack.h>
+#include "SensorFusion.h"
 
 
 void setup() {
