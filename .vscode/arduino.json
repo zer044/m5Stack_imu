@@ -3,5 +3,5 @@
     "board": "esp32:esp32:m5stack-core-esp32",
     "port": "COM5",
     "sketch": "imu_demo.ino",
-    "output": "C:/Develop/arduino/m5stack/core/m5Stack_imu/"
+    "output": "C:\\Arduino_temp\\"
 }
