@@ -1,0 +1,7 @@
+{
+    "configuration": "FlashMode=qio,FlashFreq=80,PartitionScheme=default,UploadSpeed=921600,DebugLevel=none",
+    "board": "esp32:esp32:m5stack-core-esp32",
+    "port": "COM5",
+    "sketch": "imu_demo.ino",
+    "output": "C:/Develop/arduino/m5stack/core/m5Stack_imu/"
+}
