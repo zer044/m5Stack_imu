@@ -3,9 +3,9 @@
 //@brief Imu library for M5Stack
 //@details This class is used to read the IMU data and calculate the angles.
 //****************************************************************************
+#define M5STACK_MPU6886
 
 #include "Imu.h"
-
 using namespace imu_fusion;
 
 Imu::Imu() : pitch_(0.0), roll_(0.0), yaw_(0.0), temperature_(0.0),
@@ -26,7 +26,7 @@ void Imu::update()
 
     M5.IMU.getGyroData(&gx_, &gy_, &gz_);
     M5.IMU.getAccelData(&ax_, &ay_, &az_);
-
+    M5.IMU.getTempData(&temperature_);
     fusion.MahonyUpdate(gx_, gy_, gz_, ax_, ay_, az_, deltat);
 
     pitch_ = fusion.getPitch();
